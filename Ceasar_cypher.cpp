@@ -51,10 +51,10 @@ int main()
     int n;
     while (k == 1)
     {
-        printf("Nhap j do: \n");
+        printf("Type something: \n");
         fflush(stdin);
         gets(str);
-        printf("Nhap gia tri dich chuyen: \n");
+        printf("Type the transitory value: \n");
         scanf("%d", &n);
         char a;
         for (int i = 0; str[i] != '\0'; i++)
@@ -68,7 +68,7 @@ int main()
                 str[i] = unravel(str[i], n);
             }
         }
-        printf("Thong diep:\n%s\n", str);
+        printf("The message:\n%s\n", str);
         printf("Co muon tiep tuc khong?\n(Yes = 1 / No = 0): \n");
         scanf("%d", &k);
         if (k == 0)
